@@ -1,5 +1,4 @@
 <?php
-/* @var $_api array */
 
 use codexten\yii\modules\api\ApiModule;
 
