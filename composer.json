@@ -1,0 +1,29 @@
+{
+  "name": "codexten/yii-module-api",
+  "keywords":["codexten", "yii","api"],
+  "type": "library",
+  "description": "Api module for yii 2.0 or higher",
+  "require": {
+    "codexten/yii-web": "^2.0.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "codexten\\yii\\modules\\api\\": "src"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "2.0.x-dev"
+    },
+    "sconfig-plugin": {
+      "i18n": "config/i18n.php",
+      "adminSettings": "config/adminSettings.php",
+      "moduleAuth": [
+        "$web",
+        "$userSettings",
+        "config/moduleAuth.php"
+      ],
+      "migrationNamespaces": "config/migrationNamespaces.php"
+    }
+  }
+}
